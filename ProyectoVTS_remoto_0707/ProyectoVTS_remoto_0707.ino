@@ -25,8 +25,8 @@ const char* password = STAPSK;
 WiFiClient  client;//Para establecer la tarjeta como cliente
 
 /* Definición de los botones de entrada*/
-const int buttonPinA = 0; //Canal digital 0
-const int buttonPinB = 1; //Canal digital 1
+const int buttonPinA = 4; //Canal digital 4
+const int buttonPinB = 5; //Canal digital 5
 int buttonStateA = 0; //Guarda el estado de los botones..
 int buttonStateB = 0; //Por default los pone en bajo
 
