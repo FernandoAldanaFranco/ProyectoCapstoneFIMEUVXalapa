@@ -2,7 +2,7 @@
 //Dr. Fernando Aldana Franco, Dr. José Gustavo Leyva Retureta, Dr. Carlos Alberto Mora Barradas.
 //Junio 2022
 //Universidad Veracruzana.
-//ThingSpeak
+//ThingSpeak lectura
 #include <WiFi.h>
 #include "ThingSpeak.h" // always include thingspeak header file after other header files and custom macros
 
@@ -19,13 +19,13 @@ String myStatus = "";
 
 
 //Think Speak Read
-unsigned long myChannelNumberRead = 1818373;
-const char * myCounterReadAPIKey = "J236ZIAS1P2CL2D9";
-unsigned int counterFieldNumber = 1;  
+unsigned long myChannelNumberRead = 1818373; //ID del canal
+const char * myCounterReadAPIKey = "J236ZIAS1P2CL2D9"; //API de lectura
+unsigned int counterFieldNumber = 1;  //Contador de campo
 
 void setup() {
   pinMode(13, OUTPUT);//Define el pin 13 como salida  
-  Serial.begin(9600);
+  Serial.begin(9600); //Arranca canal serial
   //Conecta a WIFI
   // check for the presence of the shield:
   if (WiFi.status() == WL_NO_SHIELD) {
